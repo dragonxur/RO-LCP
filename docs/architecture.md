@@ -1,12 +1,9 @@
 ## Ralph CLI Validation
 
-Ralph Orchestrator CLI was successfully initialized and entered its event loop.
+Ralph Orchestrator was executed using a project-local configuration
+with the opencode backend and a local Ollama provider.
 
-During execution, the agent attempted to spawn an LLM backend (Claude),
-which was not available in the local environment. This is expected for a
-local-first, zero-cost setup.
+The agent successfully entered the event loop, processed the prompt,
+used its scratchpad, and terminated upon detecting the completion promise.
 
-The generated logs confirm successful CLI execution and orchestration flow,
-even without an active LLM provider.
-
-See: artifacts/ralph/hello.log
+Execution logs are available under artifacts/ralph.
