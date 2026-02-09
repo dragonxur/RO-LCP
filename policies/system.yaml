@@ -1,0 +1,8 @@
+cpu:
+  max_drift_percent: 20
+
+memory:
+  min_free_mb: 24000
+
+disk:
+  min_free_gb: 15
