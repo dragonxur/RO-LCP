@@ -1,0 +1,1 @@
+{"ts":"2026-02-09T12:58:17.732094845+00:00","iteration":0,"hat":"loop","topic":"task.start","triggered":"planner","payload":"You are Ralph Orchestrator running inside RO-LCP.\n\nYour task is to validate execution by printing a confirmation message.\n\nOutput only the confirmation text.\n"}
