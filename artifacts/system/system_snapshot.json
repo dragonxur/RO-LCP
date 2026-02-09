@@ -1,0 +1,16 @@
+{
+  "cpu": {
+    "usage_percent": 1.1
+  },
+  "memory": {
+    "total_mb": 31340,
+    "used_mb": 3043,
+    "free_mb": 26655
+  },
+  "disk": {
+    "mount": "/",
+    "total_gb": 118,
+    "used_gb": 91,
+    "free_gb": 21
+  }
+}
