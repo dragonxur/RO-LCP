@@ -29,3 +29,22 @@ Agents are executed by Ralph Orchestrator and communicate only through artifacts
 
 ```bash
 ralph run
+
+## Policies
+
+RO-LCP uses deterministic policies to decide when detected drift
+represents a meaningful system issue.
+
+Policies are defined in YAML and evaluated against drift reports.
+
+### Example
+
+```yaml
+cpu:
+  max_drift_percent: 20
+
+memory:
+  min_free_mb: 24000
+
+disk:
+  min_free_gb: 15
