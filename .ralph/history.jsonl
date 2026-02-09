@@ -5,3 +5,5 @@
 {"ts":"2026-02-09T13:43:19.259546590Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
 {"ts":"2026-02-09T13:45:34.687471890Z","type":{"kind":"loop_started","prompt":"You are a local system control agent running inside RO-LCP.\n\nYour responsibility is to collect real system metrics from the host machine.\nYou MUST execute system commands to retrieve data.\nYou MUST NOT estimate or invent values.\n\nCollect the following metrics:\n- CPU usage\n- Memory usage\n- Disk usage\n\nUse standard Linux commands only.\n\nFormat the final output as JSON using the structure defined in specs/system.md.\n\nWhen all metrics are collected and formatted, output LOOP_COMPLETE.\n"}}
 {"ts":"2026-02-09T13:46:21.693373005Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
+{"ts":"2026-02-09T14:27:50.354807550Z","type":{"kind":"loop_started","prompt":"You are a validation agent.\n\nYour task is to validate artifacts against written specifications.\nFail explicitly if contracts are violated.\nOnly succeed when the contract is fully satisfied.\n"}}
+{"ts":"2026-02-09T14:29:46.556952270Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
