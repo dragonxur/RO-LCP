@@ -48,3 +48,10 @@ memory:
 
 disk:
   min_free_gb: 15
+
+
+## Project Status
+
+- v0.1 — Complete (audited via RO)
+- v0.2 — In progress (policies and alerting)
+- v0.3 — Planned (self-healing)
