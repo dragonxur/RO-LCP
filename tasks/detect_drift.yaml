@@ -1,0 +1,9 @@
+name: detect_system_drift
+description: Detect system metric drift between snapshots
+
+steps:
+  - read_file: artifacts/system/system_snapshot_prev.json
+  - read_file: artifacts/system/system_snapshot.json
+  - compare_metrics:
+      output: artifacts/system/drift_report.json
+      spec: specs/drift.md
