@@ -7,3 +7,5 @@
 {"ts":"2026-02-09T13:46:21.693373005Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
 {"ts":"2026-02-09T14:27:50.354807550Z","type":{"kind":"loop_started","prompt":"You are a validation agent.\n\nYour task is to validate artifacts against written specifications.\nFail explicitly if contracts are violated.\nOnly succeed when the contract is fully satisfied.\n"}}
 {"ts":"2026-02-09T14:29:46.556952270Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
+{"ts":"2026-02-09T14:43:00.469951632Z","type":{"kind":"loop_started","prompt":"You are a validation agent.\n\nYou MUST persist validation results as artifacts.\nDo not consider the task complete until the validation artifact is written.\n"}}
+{"ts":"2026-02-09T14:45:37.578886562Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
