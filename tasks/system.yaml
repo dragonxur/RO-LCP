@@ -1,0 +1,29 @@
+name: collect_system_metrics
+description: Collect system metrics from host
+
+steps:
+  - run_command: "top -bn1 | grep 'Cpu(s)' | awk '{print $2}' | cut -d'%' -f1"
+    output_var: cpu_usage
+  - run_command: "free -m | grep '^Mem:' | awk '{print $2,$3,$4}'"
+    output_var: memory_info
+  - run_command: "df -h / | tail -1 | awk '{print $2,$3,$4}'"
+    output_var: disk_info
+  - write_file:
+      path: artifacts/system/system_snapshot.json
+      content: |
+        {
+          "cpu": {
+            "usage_percent": {{ cpu_usage }}
+          },
+          "memory": {
+            "total_mb": {{ memory_info[0] }},
+            "used_mb": {{ memory_info[1] }},
+            "free_mb": {{ memory_info[2] }}
+          },
+          "disk": {
+            "mount": "/",
+            "total_gb": {{ disk_info[0] }},
+            "used_gb": {{ disk_info[1] }},
+            "free_gb": {{ disk_info[2] }}
+          }
+        }
