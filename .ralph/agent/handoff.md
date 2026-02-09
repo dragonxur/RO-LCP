@@ -1,17 +1,18 @@
 # Session Handoff
 
-_Generated: 2026-02-09 14:29:48 UTC_
+_Generated: 2026-02-09 14:45:39 UTC_
 
 ## Git Context
 
 - **Branch:** `feature/RO-LCP-4-validate-system-metrics`
-- **HEAD:** edad7c6: chore: auto-commit before merge (loop primary)
+- **HEAD:** b6b93db: chore: auto-commit before merge (loop primary)
 
 ## Tasks
 
 ### Completed
 
 - [x] Validate system snapshot JSON against specification
+- [x] Validate system snapshot JSON against system.md specification
 
 
 ## Key Files
@@ -22,12 +23,12 @@ Recently modified:
 - `.ralph/agent/scratchpad.md`
 - `.ralph/agent/summary.md`
 - `.ralph/agent/tasks.jsonl`
-- `.ralph/agent/tasks.jsonl.lock`
 - `.ralph/current-events`
 - `.ralph/current-loop-id`
-- `.ralph/events-20260209-125817.jsonl`
-- `.ralph/events-20260209-130706.jsonl`
 - `.ralph/events-20260209-134221.jsonl`
+- `.ralph/events-20260209-134534.jsonl`
+- `.ralph/events-20260209-142750.jsonl`
+- `.ralph/events-20260209-144300.jsonl`
 
 ## Next Session
 
@@ -38,7 +39,6 @@ Session completed successfully. No pending work.
 ```
 You are a validation agent.
 
-Your task is to validate artifacts against written specifications.
-Fail explicitly if contracts are violated.
-Only succeed when the contract is fully satisfied.
+You MUST persist validation results as artifacts.
+Do not consider the task complete until the validation artifact is written.
 ```
