@@ -9,3 +9,5 @@
 {"ts":"2026-02-09T14:29:46.556952270Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
 {"ts":"2026-02-09T14:43:00.469951632Z","type":{"kind":"loop_started","prompt":"You are a validation agent.\n\nYou MUST persist validation results as artifacts.\nDo not consider the task complete until the validation artifact is written.\n"}}
 {"ts":"2026-02-09T14:45:37.578886562Z","type":{"kind":"loop_completed","reason":"completion_promise"}}
+{"ts":"2026-02-09T17:48:15.325150479Z","type":{"kind":"loop_started","prompt":"You are a drift detection agent.\n\nYou must analyze historical artifacts and detect changes over time.\nYou must persist a drift report artifact according to the provided contract.\n"}}
+{"ts":"2026-02-09T17:51:24.264629945Z","type":{"kind":"loop_completed","reason":"completion_promise"}}

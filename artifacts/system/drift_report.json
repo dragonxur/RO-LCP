@@ -1,0 +1,18 @@
+{
+  "cpu_drift": {
+    "previous": 1.1,
+    "current": 33.3,
+    "delta": 32.199999999999996
+  },
+  "memory_drift": {
+    "previous_free_mb": 26655,
+    "current_free_mb": 24516,
+    "delta_mb": -2139
+  },
+  "disk_drift": {
+    "previous_free_gb": 21,
+    "current_free_gb": 21,
+    "delta_gb": 0
+  },
+  "status": "drift_detected"
+}
