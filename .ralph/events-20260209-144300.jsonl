@@ -1,0 +1,3 @@
+{"ts":"2026-02-09T14:43:00.469833395+00:00","iteration":0,"hat":"loop","topic":"task.start","triggered":"planner","payload":"You are a validation agent.\n\nYou MUST persist validation results as artifacts.\nDo not consider the task complete until the validation artifact is written.\n"}
+{"payload":"system snapshot validation: PASSED","topic":"validation.complete","ts":"2026-02-09T14:45:34.597889928+00:00"}
+{"ts":"2026-02-09T14:45:37.574684291+00:00","iteration":1,"hat":"loop","topic":"loop.terminate","payload":"## Reason\ncompleted\n\n## Status\nAll tasks completed successfully.\n\n## Summary\n- Iterations: 1\n- Duration: 2m 37s\n- Exit code: 0"}

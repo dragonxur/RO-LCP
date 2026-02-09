@@ -1,0 +1,14 @@
+name: validate_system_metrics
+description: Validate system metrics JSON against contract
+
+steps:
+  - read_file: artifacts/system/system_snapshot.json
+  - validate_json:
+      against: specs/system.md
+  - write_file:
+      path: artifacts/system/validation_result.json
+      content: |
+        {
+          "status": "valid",
+          "checked_at": "{{ now }}"
+        }
