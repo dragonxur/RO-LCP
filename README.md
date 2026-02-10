@@ -38,7 +38,7 @@ RO-LCP applies this same **control plane logic** to Linux.
 ## Architecture Overview
 
 <p align="center">
-  <img src="docs/ro-RO-LCP-mind-map.png" alt="Linux Control Plane – Observability Map" width="800">
+  <img src="docs/ro-lcp-mind-map.png" alt="RO-LCP Observability Mind Map" width="800">
 </p>
 
 ---
