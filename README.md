@@ -95,3 +95,30 @@ This makes RO-LCP ideal for:
 
 ```bash
 ralph run
+```
+
+That’s it. No SaaS. No credentials. No collectors.
+
+## Policies (Drift Rules)
+
+Policies define when change actually matters.
+
+They are written in YAML and evaluated against system artifacts.
+
+Example
+cpu:
+  max_drift_percent: 20
+
+memory:
+  min_free_mb: 24000
+
+disk:
+  min_free_gb: 15
+
+Project Status
+
+v0.1 — Complete (audited via RO)
+
+v0.2 — In progress (policies + alerting)
+
+v0.3 — Planned (self-healing workflows)
