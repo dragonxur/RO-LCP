@@ -2,7 +2,7 @@
 
 **Status:** Completed successfully
 **Iterations:** 6
-**Duration:** 16m 3s
+**Duration:** 9m 18s
 
 ## Tasks
 
@@ -14,4 +14,4 @@ _No events recorded._
 
 ## Final Commit
 
-207c231: Merge pull request #21 from dragonxur/feature/RO-LCP-6-policies-alerting
+1a411b5: Merge pull request #24 from dragonxur/feature/RO-LCP-22-audit-v0.1
