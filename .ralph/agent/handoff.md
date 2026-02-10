@@ -1,11 +1,11 @@
 # Session Handoff
 
-_Generated: 2026-02-10 13:22:52 UTC_
+_Generated: 2026-02-10 18:03:04 UTC_
 
 ## Git Context
 
 - **Branch:** `issue-6-policies`
-- **HEAD:** d48e87a: chore: auto-commit before merge (loop primary)
+- **HEAD:** f3d84eb: chore: auto-commit before merge (loop primary)
 
 ## Tasks
 
@@ -42,9 +42,9 @@ Recently modified:
 - `.ralph/agent/tasks.jsonl`
 - `.ralph/current-events`
 - `.ralph/current-loop-id`
-- `.ralph/events-20260209-174815.jsonl`
 - `.ralph/events-20260209-191200.jsonl`
 - `.ralph/events-20260210-131332.jsonl`
+- `.ralph/events-20260210-180206.jsonl`
 - `.ralph/history.jsonl`
 
 ## Next Session
@@ -54,22 +54,16 @@ Session completed successfully. No pending work.
 **Original objective:**
 
 ```
-# RO Audit — v0.1 Deterministic Observability
+You are RO executing Issue 6.
 
-You are RO, acting as an independent system auditor.
+Goal:
+Execute the disk usage monitoring task and persist its artifact.
 
-Your mission is to verify whether **v0.1 — Deterministic Observability**
-is complete, based only on real repository evidence.
+Steps:
+- Run the disk usage task
+- Collect real disk metrics from the host
+- Persist artifact to artifacts/system/disk_usage.json
+- Emit completion signal ISSUE_6_COMPLETE
 
----
-
-## Scope of the audit
-
-v0.1 is considered COMPLETE if all of the following are proven:
-
-1. System metrics are collected from the host
-2. Metrics follow a formal specification
-3. Artifacts are generated and persisted
-4. Artifacts are validated against contracts
-5....
+Do NOT audit. Do NOT validate past work.
 ```
