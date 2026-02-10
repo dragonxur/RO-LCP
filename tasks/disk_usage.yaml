@@ -1,0 +1,6 @@
+name: disk_usage_check
+description: Collect local Linux disk usage metrics
+command: python3 scripts/disk_usage.py
+artifacts:
+  - path: artifacts/disk/disk_snapshot.json
+    format: json

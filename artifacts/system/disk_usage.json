@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-02-10T18:02:50.096687Z",
+  "disk": {
+    "mount": "/",
+    "total_gb": 117,
+    "used_gb": 91,
+    "free_gb": 20
+  }
+}
