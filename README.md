@@ -1,119 +1,97 @@
-RO-LCP
+# RO-LCP — Linux Control Plane
 
-Local System Health, Explained Like the Real World
 
-RO-LCP makes Linux system health observable, predictable, and auditable — without dashboards, agents sprawl, or external services.
 
-What is RO-LCP?
+**RO-LCP (Linux Control Plane)** makes Linux system health **observable, predictable, and auditable** —  
+without dashboards, agent sprawl, or external services.
 
-RO-LCP is a local system health monitoring framework built on top of Ralph Orchestrator ($RO).
+---
 
-Instead of traditional monitoring tools that rely on always-on services and centralized collectors, RO-LCP works like a digital inspection process:
+## What is RO-LCP?
 
-Agents observe the system
+**RO-LCP (Linux Control Plane)** is a local system control framework built on top of **Ralph Orchestrator ($RO)**.
 
-Results are written as artifacts
+Instead of traditional monitoring tools that rely on always-on services and centralized collectors, RO-LCP works like a **deterministic control plane** for your Linux system:
 
-Outputs are checked against clear rules (contracts)
+- The system is observed through agents  
+- Observations are written as immutable artifacts  
+- Outputs are validated against explicit contracts  
+- Policies decide whether the system is healthy or drifting  
 
-Decisions are deterministic and reproducible
+**No black boxes. No external dependencies. No hidden state.**
 
-No black boxes. No external dependencies.
+---
 
-Real-World Analogy
+## Real-World Analogy
 
-Think of RO-LCP like a factory quality inspection:
+Think of RO-LCP like a **factory control room**:
 
-Sensors check machines (CPU, memory, disk)
+- Sensors inspect machines (CPU, memory, disk)  
+- Every inspection produces a written report  
+- Reports are checked against official standards  
+- Only proven issues trigger actions  
 
-Each inspection produces a written report
+RO-LCP applies this same **control plane logic** to Linux.
 
-Reports are validated against official standards
-
-Only real, meaningful issues are flagged
-
-This same pattern is applied to your Linux system.
+---
 
 ## Architecture Overview
 
 <p align="center">
-  <img src="docs/ro-lcp-mind-map.png" alt="RO-LCP Observability Mind Map" width="800">
+  <img src="docs/ro-RO-LCP-mind-map.png" alt="Linux Control Plane – Observability Map" width="800">
 </p>
 
-What RO-LCP Does
+---
 
-Collects real CPU, memory, and disk metrics
+## What RO-LCP Does
 
-Stores every snapshot as a verifiable JSON artifact
+- Collects real CPU, memory, and disk metrics  
+- Stores every snapshot as a **verifiable JSON artifact**  
+- Validates outputs against **contract-first specifications**  
+- Detects system drift using **deterministic policies**  
+- Runs **100% locally**, offline-friendly  
 
-Validates outputs against contract-first specifications
+---
 
-Detects system drift using deterministic policies
+## How It Works (Simple Flow)
 
-Runs 100% locally, offline-friendly
+### 1. Snapshot Agent
+Collects system metrics at a point in time.
 
-How It Works (Simple Flow)
+### 2. Artifact Generation
+Metrics are stored as **immutable JSON outputs**.
 
-Snapshot Agent
-Collects system metrics at a point in time
+### 3. Contract Validation
+Outputs are checked against a **formal specification**.
 
-Artifact Generation
-Metrics are stored as immutable JSON outputs
+### 4. Policy Evaluation
+Drift is evaluated to decide if action is required.
 
-Contract Validation
-Outputs are checked against a formal spec
+> Agents never communicate directly —  
+> **artifacts are the only source of truth**.
 
-Policy Evaluation
-Drift is evaluated to decide if action is required
+---
 
-Agents never talk directly to each other — artifacts are the only source of truth.
-
-Why This Is Different
+## Why a Control Plane (Not Just Monitoring)?
 
 Traditional monitoring answers:
 
-“What is happening right now?”
+> **“What is happening right now?”**
 
 RO-LCP answers:
 
-“Is the system behaving within agreed, provable limits — and can we prove it later?”
+> **“Is the system operating within agreed, provable limits — and can this be audited later?”**
 
-This makes it ideal for:
+This makes RO-LCP ideal for:
 
-Auditable environments
+- Auditable environments  
+- Deterministic systems  
+- Autonomous infrastructure  
+- AI-driven operations  
 
-Deterministic systems
+---
 
-Autonomous infrastructure
+## Running Locally
 
-AI-driven operations
-
-Running Locally
+```bash
 ralph run
-
-
-That’s it. No SaaS. No credentials. No collectors.
-
-Policies (Drift Rules)
-
-Policies define when change actually matters.
-
-They are written in YAML and evaluated against system artifacts.
-
-Example
-cpu:
-  max_drift_percent: 20
-
-memory:
-  min_free_mb: 24000
-
-disk:
-  min_free_gb: 15
-
-Project Status
-
-v0.1 — Complete (audited via RO)
-
-v0.2 — In progress (policies + alerting)
-
-v0.3 — Planned (self-healing workflows)
