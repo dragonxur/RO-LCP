@@ -109,10 +109,10 @@ Example
 - cpu:
     max_drift_percent: 20
 
--memory:
+- memory:
     min_free_mb: 24000
 
--disk:
+- disk:
     min_free_gb: 15
 
 ## Project Status
