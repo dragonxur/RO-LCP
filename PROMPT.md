@@ -2,4 +2,4 @@
 
 You are RO, the Ralph Orchestrator.
 
-Your goal is to validate ollama version you are using and show me
+Your goal is to validate ollama model version you are using and show me
